@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>events</title>
+
+</head>
+
+<body style="background-color: gray; color: aliceblue;">
+    <div>
+        <h2 style="color: black;">EVENTS and its Features </h2>
+        <ul id="images">
+            <li><img src="https://cdn.pixabay.com/photo/2020/04/03/11/28/water-4998513_640.png" alt="bottle"
+                    width="100px" id="bottle"></li>
+            <li><img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?cs=srgb&dl=pexels-fotios-photos-1092644.jpg&fm=jpg"
+                    alt="mobile" id="mobile" width="100px"></li>
+            <li><img src="https://t4.ftcdn.net/jpg/02/81/89/73/360_F_281897358_3rj9ZBSZHo5s0L1ug7uuIHadSxh9Cc75.jpg"
+                    alt="building" id="building" width="100px"></li>
+            <li><img src="https://images.pexels.com/photos/4651722/pexels-photo-4651722.jpeg" alt="bike" id="bike"
+                    width="100px">
+            </li>
+            <li><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS6Gz9jVLL7F2SwmX_pUFM37XeWZWEGdpwxtkULq3jzuVnOIhMOOGqoII8Z4_Yyk0F_XTlOXLjo16npw_uQO8WmlXGtGpOzbkOtZzMtJu9rPNgSVkzUXMQN"
+                    alt="choco" id="choco" width="100px">
+            </li>
+            <li><button id="warning" style="color: red;">DON'T MESS THIS</button>
+                <p id="warningMessage" style="display: none; background-color: black;  color: red; ">
+                    Warning: This is a warning message!</p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    // document.getElementById("images").addEventListener('click', function (e) {
+    //     alert('some image is clicked');
+    //     console.log(e)
+    // });
+    // document.getElementById('building').onclick = function (e) {
+    //     alert('building clicked')
+    //     console.log(e)
+    // };
+    // document.getElementById("bike").addEventListener('click', function (e) {
+    //     prompt('bike engine is ON')
+    //     e.stopPropagation()
+    //     console.log(e)
+    // });
+    // document.getElementById('mobile').addEventListener('click', function (e) {
+    //     alert('battery low, please charge');
+    //     e.stopPropagation()
+    //     console.log(e)
+    // }, false);
+    // document.getElementById('choco').addEventListener('click', function (e) {
+    //     e.preventDefault();
+    //     console.log('choco')
+    // }, false);
+    // document.getElementById('warning').addEventListener('click', function (e) {
+    //     document.getElementById('warningMessage').style.display = 'block';
+    //     console.log(e)
+    // });
+    // document.querySelector('#images').addEventListener('click', function (e) {
+    //     console.log(e.target.parentNode);
+    //     let removeIt = e.target.parentNode
+    //     removeIt.parentNode.removeChild(removeIt);
+
+    // })
+
+    // document.querySelector('#images').addEventListener('click', function (e) {
+    //     console.log(e.target.parentNode)
+    //     let removeThis = e.target.parentNode
+    //     removeThis.remove()
+    // removeThis.parentNode.removeChild(removeThis)
+    // })
+    // document.querySelector('#images').addEventListener('click', function (e) {
+    //     console.log(e.target.parentNode)
+    //     let remove1 = e.target.parentNode
+    //     remove1.remove()
+    // })
+    document.querySelector('#images').addEventListener('click', function (e) {
+        console.log(e.target.parentNode)
+        let remover = e.target.parentNode
+        remover.remove()
+    })
+</script>
+
+</html>
